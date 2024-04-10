@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smythe", sans-serif;
+}
+/********** LAYOUT **********/
+header, section  {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+header {
+    background-image: url("../img/burger-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+    height: 150px;
+}
+/********** TYPOGRAPHY **********/
+h1  {
+    font-size: 39px;
+    margin-bottom: 7px;
+}
+
+header p {
+    font-size: 22px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 28px;
+}
+
+h3 {
+    color: #000000;
+    font-size: 20px;
+}
+/********** BUTTONS **********/
+.btn {
+    background-color: #16db99;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #1ee09d;
+}
+
+.btn-add-item {
+    margin-left: auto;
+    color: #3C3C3C;
+    font-size: 30px;
+    background-color: #ffffff;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    width:  50px;
+    height: 50px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.btn-remove-item {
+    font-family: 'Verdana', sans-serif;
+    font-size: 12px;
+    margin-left: 13px;
+    border: none;
+    background: none;
+    color: #bbbbbb;
+}
+
+.btn-complete-order {
+    margin-bottom: 40px;
+}
+
+.btn-submit {
+    font-size: 20px;
+}
+
+/********** SECTION | MENU **********/
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu-emoji {
+    font-size: 70px;
+}
+
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-info p {
+    color: #8B8B8B;
+}
+/********** SECTION | ORDER **********/
+.section-order h2 {
+    text-align: center;
+}
+
+.order-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+}
+
+.total-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 50px 0;
+}
+/********** MODAL | FORM **********/
+.section-modal {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-modal h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 23px;
+    -webkit-box-shadow: 2px 2px 40px 20px rgba(0,0,0,0.15);
+    -moz-box-shadow: 2px 2px 40px 20px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 40px 20px rgba(0,0,0,0.15);
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+}
+
+input:focus {
+    outline-color: #16db99;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.modal-active {
+    display: none;
+}
+/********** SECTION | CONFIRMATION **********/
+#section-confirmation {
+    display: none;
+}

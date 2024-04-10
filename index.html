@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jimmy's Diner</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizza in town</p>
+    </header>
+
+    <section class="section-menu" id="menu">
+        <!-- RENDER MENU -->
+    </section>
+    <section class="section-order" id="section-order">
+        <!-- RENDER ITEMS ORDERED -->
+    </section>
+    <section class="section-modal modal-active" id="section-modal">
+        <form action="#" class="form" id="form">
+            <h2>Enter card Details</h2>
+            <div class="modal-info">
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Full name" required/>
+                <input type="text" name="card" id="cardNumber" placeholder="Enter card number" aria-label="Card Number" maxlength="12" required/>
+                <input type="text" name="ccv" id="ccv" placeholder="Enter CCV" aria-label="CCV" maxlength="3" required/>
+                <button class="btn btn-submit" type="submit">Pay</button>
+            </div>
+        </form>
+    </section>
+    <section class="section-confirmation" id="section-confirmation">
+        <!-- RENDER ORDER CONFIRMATION -->
+    </section>
+</main>
+<script src="script.js" type="module"></script>
+</body>
+</html>
